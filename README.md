@@ -41,13 +41,13 @@
   This application is covered by the MIT license.
 
   ## Contributors
-  👥<br /> :octocat:Dan Arbelo
+  👥<br /> <br />:octocat: Dan Arbelo
 
   ## Tests
   ✏️<br /> `npm install jest --save-dev`<br />   <br />Tests are performed via jest and are for all classes: `Employee`, `Manager`, `Engineer`, and `Intern`.
 
   ## Questions
-  :question:<br />
+  ❓<br />
     <br />
     📜 Feel free to email me with any questions: dan@arbelo.me<br />
     <br />
