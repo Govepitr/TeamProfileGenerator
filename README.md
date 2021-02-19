@@ -1,26 +1,37 @@
+  <h1 align="center">Team Profile Generator</h1>
+  
+  <p align="center">
+    <img src="https://img.shields.io/github/repo-size/Govepitr/ProfessionalREADMEGenerator?style=plastic" />
+    <img src="https://img.shields.io/github/languages/count/Govepitr/ProfessionalREADMEGenerator?style=plastic" />
+    <img src="https://img.shields.io/github/languages/top/Govepitr/ProfessionalREADMEGenerator?style=plastic" />
+    <img src="https://img.shields.io/github/last-commit/govepitr/ProfessionalREADMEGenerator?style=plastic" />
+  </p>
 
-  <h1 align="center">Team Profile Generator </h1>
-  
   <p align="center">
-    <img src="https://img.shields.io/badge/license-MIT-success" />
-  </p>  
-  
-  <p align="center">
-    <img src="https://img.shields.io/github/repo-size/Govepitr/TeamProfileGenerator?style=plastic" />
-    <img src="https://img.shields.io/github/languages/count/Govepitr/TeamProfileGenerator?style=plastic" />
-    <img src="https://img.shields.io/github/languages/top/Govepitr/TeamProfileGenerator?style=plastic" />
-    <img src="https://img.shields.io/github/last-commit/Govepitr/TeamProfileGenerator?style=plastic" />
+    <img src="https://img.shields.io/badge/Javascript-yellow" />
+    <img src="https://img.shields.io/badge/jQuery-orange" />
+    <img src="https://img.shields.io/badge/-node.js-green" />
+    <img src="https://img.shields.io/badge/-inquirer-purple" />
+    <img src="https://img.shields.io/badge/-screencastify-red" />
+    <img src="https://img.shields.io/badge/-json-orange"" />
   </p>
   
   ## Description
   ❓ A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+  
+  A node.js application that allows users to generate a professional README.md file for their project's repository. The README.md is created in the dist directory and is located right [here](./dist/index.html).
+
+  :loop: Here's a GIF showing the app's overall functionality:
+
+  ![demo](./src/demo.gif)
+
+  :movie_camera: For the full functionality, please click the [link](./src/Profile.webm)
 
   
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Repository](#repository)
   - [License](#license)
   - [Contributors](#contributors)
   - [Tests](#tests)
@@ -30,28 +41,33 @@
   🚨<br /> `npm init`<br />  <br />`npm install inquirer`<br /> <br />`npm install email-validator`<br /> <br />`npm install jest --save-dev`
 
   ## Usage
-  🚀<br /> From the root folder of your project, run the following command and provide information in response to the questions:<br /> <br />`node Index`
+  🚀 
 
-  ## Repository
-  :octocat: [Team Profile Generator](https://github.com/Govepitr/TeamProfileGenerator)
+  From the root folder of your project, run the following command and provide information based on the questions: 
+  
+  `node index.js`
+
 
   ## License
   ![badge](https://img.shields.io/badge/license-MIT-success)
   <br />
   This application is covered by the MIT license.
 
+
   ## Contributors
-  👥<br /> <br />:octocat: Dan Arbelo
+  👥<br />
+  
+  :octocat: [Dan Arbelo](https://github.com/govepitr)  
+  
 
   ## Tests
   ✏️<br /> `npm install jest --save-dev`<br />   <br />Tests are performed via jest and are for all classes: `Employee`, `Manager`, `Engineer`, and `Intern`.
 
-  ## Questions
-  ❓<br />
-    <br />
-    📜 Feel free to email me with any questions: dan@arbelo.me<br />
-    <br />
-    :octocat: Find me on GitHub: [Govepitr](https://github.com/Govepitr)<br /><br />
 
-  _This README was generated with the power of 💞 by ✨[Professional README Generator](https://github.com/Govepitr/ProfessionalREADMEGenerator) 🤘 🤘 🤘_
+  ## Questions
+  :question: Send me an 📜 [email](mailto:dan@arbelo.me) or message me on :octocat: [Github](https://github.com/govepitr)<br />
+    
+    
+
+    
   
