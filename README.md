@@ -21,11 +21,18 @@
   
   A node.js application that allows users to generate a professional README.md file for their project's repository. The README.md is created in the dist directory and is located right [here](./dist/index.html).
 
+  :loop: For you, a GIF showing the tests and email functions working:
+
+  ![tests](./src/demo2.gif)
+
+  :paperclip: Here's a [link](./src/pudding.webm) showing the tests and email links bringing up my default email program
+
+
   :loop: Here's a GIF showing the app's overall functionality:
 
   ![demo](./src/demo.gif)
 
-  :movie_camera: For the full functionality, please click the [link](./src/Profile.webm) to download(it works best in VLC)
+  :movie_camera: For the full functionality, please click the [link](./src/Profile.webm) to download(videos work best in VLC)
 
   
   ## Table of Contents
