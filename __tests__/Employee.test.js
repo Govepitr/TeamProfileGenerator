@@ -1,7 +1,6 @@
-const { TestScheduler } = require("jest");
 const Employee = require("../lib/Employee");
 
-Test("New Employee generated", () => {
+test("New Employee generated", () => {
   const emp = new Employee();
   expect (typeof(emp)).toBe("object");
 });

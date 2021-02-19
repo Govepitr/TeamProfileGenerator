@@ -1,4 +1,3 @@
-const { TestScheduler } = require("jest");
 const Intern = require("../lib/Intern");
 
 test("Provide School from the constructor argument", () => {

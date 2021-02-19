@@ -1,7 +1,6 @@
-const { TestScheduler } = require('jest');
 const Engineer = require('../lib/Engineer');
 
-Test("GitHub Account via constructor argument", () => {
+test("GitHub Account via constructor argument", () => {
   const testValue = "GitHubFaker";
   const emp = new Engineer("Ryan", 1, "Thisisnotreal@fake.com", testValue);
   expect(emp.github).toBe(testValue);
