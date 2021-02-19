@@ -7,18 +7,18 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const html = require("./src/htmlTemp");
 const validator = require("email-validator");
-const { mainModule } = require("process");
+
 
 
 // Async functions
-const writeFileAsync = until.promisfy(fs.writeFile);
-const appendFileAsync = until.promisfy(fs.appendFile);
+const writeFileAsync = util.promisify(fs.writeFile);
+const appendFileAsync = util.promisify(fs.appendFile);
 
 let teamArray = [];
 let teamString = ``;
 
 console.clear();
-console.log("-----------------------------------------");
+
 console.log("Team Portfolio Generator by Dan Arbelo")
 
 // Application primary function
@@ -26,8 +26,8 @@ async function main() {
   try {
     await prompt()
 
-    for(let i = 0; i <TeamArray.length; i++){
-      teamString = teamString + html.generateCard(TeamArray[i]);
+    for(let i = 0; i <teamArray.length; i++){
+      teamString = teamString + html.generateCard(teamArray[i]);
     }
     let finalHtml = html.generateHTML(teamString)
 
@@ -62,7 +62,7 @@ async function prompt() {
         },{
           type: "input",
           name: "id",
-          message: "Enter the employee''s ID: ",
+          message: "Enter the employee's ID: ",
           validate: function validateName(name){
             return name !== '';
           }
@@ -89,6 +89,7 @@ async function prompt() {
       ]);
 
       let response2 = ""
+
         if (response.role === "Engineer") {
           response2 = await inquirer.prompt([{
             type: "inut",
@@ -104,13 +105,13 @@ async function prompt() {
         teamArray.push(engineer);
 
       } else if (response.role === "Intern") {
-        response2 = await inquirer.prompt([{
-          type: "input",
-          name: "x",
-          message: "Please enter their attending school name: ",
-          validate: function validateName(name) {
-            return name !== '';
-          },
+          response2 = await inquirer.prompt([{
+            type: "input",
+            name: "x",
+            message: "Please enter their attending school name: ",
+            validate: function validateName(name) {
+              return name !== '';
+            },
         },]);
 
         // Add them to the team array
@@ -129,7 +130,7 @@ async function prompt() {
 
           // Add them to the team array
           const manager = new Manager(response.name, response.id, response.email, response2.x);
-          TeamArray.push(manager);
+          teamArray.push(manager);
       }
     } catch(err) {
       return console.log(err);
@@ -138,7 +139,7 @@ async function prompt() {
       type: "list",
       name: "finish",
       message: "Would you like to continue?",
-      choises:
+      choices:
       [
         "Yes",
         "No"

@@ -10,29 +10,26 @@ const generateHTML = function (teamString) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Behold, Your Team!</title>
-    <link rel = "icon" href ="./src/favicon.ico" type="image/x-icon"> 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
       
   </head>
   
-  <body class="bg->
-  
-      <div class="header">
-        <div class="jumbotron bg-midnightblue">
-          <h1 class="display-4 text-white text-center">My Team</h1>
-        </div>
-      </div>
-      
-      <div class="container-body container-fluid">
-        <div class="row">
-              ${teamString} 
-        </div>
-      </div>
+    <body>
     
-    <script src="https://kit.fontawesome.com/257de25400.js" crossorigin="anonymous"></script>  
-  </body>
+        <div class="header">
+          <div class="jumbotron bg-success">
+            <h1 class="display-4 text-white text-center">My Team</h1>
+          </div>
+        
+          <div class="container-body container-fluid">
+            <div class="row">
+              ${teamString} 
+          </div>
+        </div>
+      
+      <script src="https://kit.fontawesome.com/257de25400.js" crossorigin="anonymous"></script>  
+    </body>
   
   </html>`
 }
@@ -50,8 +47,8 @@ const generateCard = function (arr) {
     positionIcon = `<i style="color: crimson" class="fas fa-dragon"></i>`
     roleInfo = `Office Number: ${arr.officeNumber}`
   } else if (arr.title === "Engineer") {
-    positionIcon = `<i style="color: forestgreen" class="fas fa-bug"></i>`
-    roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">${arr.github}</a>`
+    positionIcon = `<i style="color: forestgreen" class="fas fa-bug fa-rotate-180"></i>`
+    roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank" class="text-dark">${arr.github}</a>`
   } else if (arr.title === "Intern") {
     positionIcon = `<i style="color: gold" class="fas fa-school"></i>`
     roleInfo = `School: ${arr.school}`
@@ -60,15 +57,15 @@ const generateCard = function (arr) {
   return  `
   <div class="col-md-4 col-sm-6 col-12 col-lg-3">    
     <div class="card shadow-lg mb-5 bg-white rounded">
-        <div class="card-header bg-cyan">
+        <div class="card-header bg-info">
             <h4 class="text-white text-center">${arr.name}</h4>  
             <h4 class="text-white text-center">${positionIcon}</i> ${arr.title}</h4>
         </div>
 
-        <div class="card-body">
-            <ul class="list bg-blue test-black">
+        <div class="card-body bg-primary">
+            <ul class="list text-black">
                 <li>Employee ID: ${arr.id}</li>
-                <li>Email: <a href="mailto:${arr.email}">${arr.email}</a></li>
+                <li>Email: <a href="mailto:${arr.email}" class="text-dark">${arr.email}</a></li>
                 <li>${roleInfo}</li>
             </ul>
         </div>
