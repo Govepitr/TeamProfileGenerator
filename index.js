@@ -144,7 +144,7 @@ async function prompt() {
       [
         "Yes",
         "No"
-      ]
+      ] 
     },]);
 
   } while (responseDone.finish === "Yes");
