@@ -17,9 +17,7 @@
   </p>
   
   ## Description
-  ❓ A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
-  
-  A node.js application that allows users to generate a professional README.md file for their project's repository. The README.md is created in the dist directory and is located right [here](./dist/index.html).
+  ❓ A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person which is located [here](./dist/index.html).
 
   :loop: For you, a GIF showing the tests and email functions working:
 
