@@ -25,7 +25,7 @@
 
   ![demo](./src/demo.gif)
 
-  :movie_camera: For the full functionality, please click the [link](./src/Profile.webm)
+  :movie_camera: For the full functionality, please click the [link](./src/Profile.webm) to download(it works best in VLC)
 
   
   ## Table of Contents
