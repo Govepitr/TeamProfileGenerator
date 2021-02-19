@@ -59,7 +59,8 @@ async function prompt() {
           validate: function validateName(name){
             return name !== '';
           }
-        },{
+        },
+        {
           type: "input",
           name: "id",
           message: "Enter the employee's ID: ",
@@ -128,9 +129,9 @@ async function prompt() {
             },
           },]);
 
-          // Add them to the team array
+          // Add them to the 1st spot of the team array
           const manager = new Manager(response.name, response.id, response.email, response2.x);
-          teamArray.push(manager);
+          teamArray.unshift(manager);
       }
     } catch(err) {
       return console.log(err);

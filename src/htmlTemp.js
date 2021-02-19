@@ -22,7 +22,7 @@ const generateHTML = function (teamString) {
             <h1 class="display-4 text-white text-center">My Team</h1>
           </div>
         
-          <div class="container-body container-fluid">
+          <div class="d-flex justify-content-center">
             <div class="row">
               ${teamString} 
           </div>
@@ -66,7 +66,7 @@ const generateCard = function (arr) {
             <ul class="list text-black">
                 <li>Employee ID: ${arr.id}</li>
                 <li>Email: <a href="mailto:${arr.email}" class="text-dark">${arr.email}</a></li>
-                <li>${roleInfo}</li>
+                <li class="font-weight-bold">${roleInfo}</li>
             </ul>
         </div>
     </div>
