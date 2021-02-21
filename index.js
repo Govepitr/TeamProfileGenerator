@@ -93,7 +93,7 @@ async function prompt() {
 
         if (response.role === "Engineer") {
           response2 = await inquirer.prompt([{
-            type: "inut",
+            type: "input",
             name: "x",
             message: "Please enter their GitHub username: ",
             validate: function validateName(name) {
